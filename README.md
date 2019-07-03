@@ -51,3 +51,17 @@ yarn run production
 ```
 
 After that's done, check out `./public/build/tailwind.css` to see the optimized output.
+
+## Run in docker
+
+Build the image
+```bash
+docker build . -t tailwindcss-playground:dev
+```
+
+Run the image
+```bash
+docker run -d -p 8080:80 tailwindcss-playground:dev
+```
+
+Open a browser and go to http://localhost:8080/ and see the tailwind startpage.
